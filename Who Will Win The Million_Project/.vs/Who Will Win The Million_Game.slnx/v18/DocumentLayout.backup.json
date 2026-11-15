@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\My Projects\\Who-Will-Win-The-Million-C-.NET-WinForms-Game\\Who Will Win The Million_Project\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3CCA65AE-D6E9-4422-9A88-214F63E6EA77}|Who Will Win The Million_Game.csproj|D:\\My Projects\\Who-Will-Win-The-Million-C-.NET-WinForms-Game\\Who Will Win The Million_Project\\screens\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CCA65AE-D6E9-4422-9A88-214F63E6EA77}|Who Will Win The Million_Game.csproj|solutionrelative:screens\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CCA65AE-D6E9-4422-9A88-214F63E6EA77}|Who Will Win The Million_Game.csproj|D:\\My Projects\\Who-Will-Win-The-Million-C-.NET-WinForms-Game\\Who Will Win The Million_Project\\screens\\frmintro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CCA65AE-D6E9-4422-9A88-214F63E6EA77}|Who Will Win The Million_Game.csproj|solutionrelative:screens\\frmintro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CCA65AE-D6E9-4422-9A88-214F63E6EA77}|Who Will Win The Million_Game.csproj|d:\\my projects\\who-will-win-the-million-c-.net-winforms-game\\who will win the million_project\\core\\clsgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CCA65AE-D6E9-4422-9A88-214F63E6EA77}|Who Will Win The Million_Game.csproj|solutionrelative:core\\clsgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CCA65AE-D6E9-4422-9A88-214F63E6EA77}|Who Will Win The Million_Game.csproj|D:\\My Projects\\Who-Will-Win-The-Million-C-.NET-WinForms-Game\\Who Will Win The Million_Project\\screens\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3CCA65AE-D6E9-4422-9A88-214F63E6EA77}|Who Will Win The Million_Game.csproj|solutionrelative:screens\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CCA65AE-D6E9-4422-9A88-214F63E6EA77}|Who Will Win The Million_Game.csproj|D:\\My Projects\\Who-Will-Win-The-Million-C-.NET-WinForms-Game\\Who Will Win The Million_Project\\screens\\frmintro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3CCA65AE-D6E9-4422-9A88-214F63E6EA77}|Who Will Win The Million_Game.csproj|solutionrelative:screens\\frmintro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CCA65AE-D6E9-4422-9A88-214F63E6EA77}|Who Will Win The Million_Game.csproj|d:\\my projects\\who-will-win-the-million-c-.net-winforms-game\\who will win the million_project\\screens\\frmmainscreen.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CCA65AE-D6E9-4422-9A88-214F63E6EA77}|Who Will Win The Million_Game.csproj|solutionrelative:screens\\frmmainscreen.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,6 +59,82 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmMainScreen.Designer.cs",
+              "DocumentMoniker": "D:\\My Projects\\Who-Will-Win-The-Million-C-.NET-WinForms-Game\\Who Will Win The Million_Project\\Screens\\frmMainScreen.Designer.cs",
+              "RelativeDocumentMoniker": "Screens\\frmMainScreen.Designer.cs",
+              "ToolTip": "D:\\My Projects\\Who-Will-Win-The-Million-C-.NET-WinForms-Game\\Who Will Win The Million_Project\\Screens\\frmMainScreen.Designer.cs",
+              "RelativeToolTip": "Screens\\frmMainScreen.Designer.cs",
+              "ViewState": "AgIAADgCAAAAAAAAAAAwwDoCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-15T08:07:35.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmIntro.cs [Design]",
+              "DocumentMoniker": "D:\\My Projects\\Who-Will-Win-The-Million-C-.NET-WinForms-Game\\Who Will Win The Million_Project\\Screens\\frmIntro.cs",
+              "RelativeDocumentMoniker": "Screens\\frmIntro.cs",
+              "ToolTip": "D:\\My Projects\\Who-Will-Win-The-Million-C-.NET-WinForms-Game\\Who Will Win The Million_Project\\Screens\\frmIntro.cs [Design]",
+              "RelativeToolTip": "Screens\\frmIntro.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-14T10:04:31.78Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmIntro.cs",
+              "DocumentMoniker": "D:\\My Projects\\Who-Will-Win-The-Million-C-.NET-WinForms-Game\\Who Will Win The Million_Project\\Screens\\frmIntro.cs",
+              "RelativeDocumentMoniker": "Screens\\frmIntro.cs",
+              "ToolTip": "D:\\My Projects\\Who-Will-Win-The-Million-C-.NET-WinForms-Game\\Who Will Win The Million_Project\\Screens\\frmIntro.cs",
+              "RelativeToolTip": "Screens\\frmIntro.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAYwG0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-14T10:00:48.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clsGame.cs",
+              "DocumentMoniker": "D:\\My Projects\\Who-Will-Win-The-Million-C-.NET-WinForms-Game\\Who Will Win The Million_Project\\Core\\clsGame.cs",
+              "RelativeDocumentMoniker": "Core\\clsGame.cs",
+              "ToolTip": "D:\\My Projects\\Who-Will-Win-The-Million-C-.NET-WinForms-Game\\Who Will Win The Million_Project\\Core\\clsGame.cs",
+              "RelativeToolTip": "Core\\clsGame.cs",
+              "ViewState": "AgIAALoAAAAAAAAAAADwv9kAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-14T09:45:49.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmMainScreen.cs",
+              "DocumentMoniker": "D:\\My Projects\\Who-Will-Win-The-Million-C-.NET-WinForms-Game\\Who Will Win The Million_Project\\Screens\\frmMainScreen.cs",
+              "RelativeDocumentMoniker": "Screens\\frmMainScreen.cs",
+              "ToolTip": "D:\\My Projects\\Who-Will-Win-The-Million-C-.NET-WinForms-Game\\Who Will Win The Million_Project\\Screens\\frmMainScreen.cs",
+              "RelativeToolTip": "Screens\\frmMainScreen.cs",
+              "ViewState": "AgIAAKMCAAAAAAAAAAAawKkCAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-14T09:43:38.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmMainScreen.cs [Design]",
+              "DocumentMoniker": "D:\\My Projects\\Who-Will-Win-The-Million-C-.NET-WinForms-Game\\Who Will Win The Million_Project\\Screens\\frmMainScreen.cs",
+              "RelativeDocumentMoniker": "Screens\\frmMainScreen.cs",
+              "ToolTip": "D:\\My Projects\\Who-Will-Win-The-Million-C-.NET-WinForms-Game\\Who Will Win The Million_Project\\Screens\\frmMainScreen.cs [Design]",
+              "RelativeToolTip": "Screens\\frmMainScreen.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-14T09:42:43.2Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

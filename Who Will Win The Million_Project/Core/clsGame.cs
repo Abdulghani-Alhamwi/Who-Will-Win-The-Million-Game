@@ -1,27 +1,23 @@
-﻿using Microsoft.SqlServer.Server;
-using MyLib;
+﻿using MyLib;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Runtime.Remoting.Channels;
 using System.Windows.Forms;
 
 namespace Game
 {
-    internal class clsGame
+    [Serializable]
+    public class clsGame
     {
         string _FileName = "FileQuestions.txt";
-      internal List<(string Question, string RightAnswer, List<string> WrongAnswers)> lQuestions;
+        public List<(string Question, string RightAnswer, List<string> WrongAnswers)> lQuestions;
         public clsGame()
         {
             InitializeData();
         }
+
        public short CounterForShowingAnswers;
-       public bool FoundCorrectAnswer =false;
+       internal bool FoundCorrectAnswer =false;
         private List<string> _GetWrongAnswers ( string[] QuestionWithAnswers)
         {
             List<string> WrongAnswers = new List<string>();
@@ -161,7 +157,7 @@ namespace Game
             }
         }
 
-        internal short CurrentQuestionNumber;
+        public short CurrentQuestionNumber;
         public void ShowQuestion(Label Q,short Level)
         {
             string Question ="";
@@ -216,6 +212,7 @@ namespace Game
             if(CounterForShowingAnswers==4)
             {
                 btnAnswer.Text = lQuestions[CurrentQuestionNumber].RightAnswer;
+                CounterForShowingAnswers = 0;
                 return;
             }
 

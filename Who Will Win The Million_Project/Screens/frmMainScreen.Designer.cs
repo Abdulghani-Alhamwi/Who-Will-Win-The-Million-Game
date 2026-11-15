@@ -59,8 +59,10 @@
             this.tmGameCycle = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSaveCurrentProgress = new System.Windows.Forms.ToolStripMenuItem();
             this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiLoadSavedGame = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiExit = new System.Windows.Forms.ToolStripMenuItem();
             this.soundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.muteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pbpButtonsArea = new System.Windows.Forms.Panel();
@@ -470,8 +472,10 @@
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiSaveCurrentProgress,
             this.newGameToolStripMenuItem,
-            this.exitToolStripMenuItem});
+            this.tsmiLoadSavedGame,
+            this.tsmiExit});
             this.optionsToolStripMenuItem.Font = new System.Drawing.Font("Tahoma", 22F, System.Drawing.FontStyle.Bold);
             this.optionsToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
@@ -480,23 +484,37 @@
             this.optionsToolStripMenuItem.DropDownClosed += new System.EventHandler(this.ColorForeChange_TSMI_DropDownClosed);
             this.optionsToolStripMenuItem.DropDownOpening += new System.EventHandler(this.ColorForeChange_TSMI_DropDownOpening);
             // 
+            // tsmiSaveCurrentProgress
+            // 
+            this.tsmiSaveCurrentProgress.Name = "tsmiSaveCurrentProgress";
+            this.tsmiSaveCurrentProgress.Size = new System.Drawing.Size(426, 40);
+            this.tsmiSaveCurrentProgress.Text = "Save Current Progress";
+            this.tsmiSaveCurrentProgress.Click += new System.EventHandler(this.tsmiSaveCurrentProgress_Click);
+            // 
             // newGameToolStripMenuItem
             // 
             this.newGameToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.newGameToolStripMenuItem.Font = new System.Drawing.Font("Tahoma", 20F, System.Drawing.FontStyle.Bold);
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(237, 38);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(426, 40);
             this.newGameToolStripMenuItem.Text = "New Game";
             this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
             // 
-            // exitToolStripMenuItem
+            // tsmiLoadSavedGame
             // 
-            this.exitToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.exitToolStripMenuItem.Font = new System.Drawing.Font("Tahoma", 20F, System.Drawing.FontStyle.Bold);
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(237, 38);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.tsmiLoadSavedGame.Name = "tsmiLoadSavedGame";
+            this.tsmiLoadSavedGame.Size = new System.Drawing.Size(426, 40);
+            this.tsmiLoadSavedGame.Text = "Load Saved Game";
+            this.tsmiLoadSavedGame.Click += new System.EventHandler(this.tsmiLoadSavedGame_Click);
+            // 
+            // tsmiExit
+            // 
+            this.tsmiExit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsmiExit.Font = new System.Drawing.Font("Tahoma", 20F, System.Drawing.FontStyle.Bold);
+            this.tsmiExit.Name = "tsmiExit";
+            this.tsmiExit.Size = new System.Drawing.Size(426, 40);
+            this.tsmiExit.Text = "Exit";
+            this.tsmiExit.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // soundToolStripMenuItem
             // 
@@ -614,10 +632,12 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiExit;
         private System.Windows.Forms.Panel pbpButtonsArea;
         private System.Windows.Forms.ToolStripMenuItem soundToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem muteToolStripMenuItem;
         private System.Windows.Forms.Panel pnlResponsiveness;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSaveCurrentProgress;
+        private System.Windows.Forms.ToolStripMenuItem tsmiLoadSavedGame;
     }
 }

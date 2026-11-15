@@ -1,12 +1,10 @@
-﻿using Guna.UI2.WinForms;
-using MyLib;
+﻿using MyLib;
 using System;
-using System.ComponentModel.Design;
-using System.Configuration;
-using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
-using Who_Will_Win_The_Million_Game.Screens;
+using static Who_Will_Win_The_Million_Game.frmMainScreen;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Who_Will_Win_The_Million_Game
 {
@@ -48,10 +46,16 @@ namespace Who_Will_Win_The_Million_Game
         {
             clsLib.RunClickSound();
 
-            btnStart.Hide();
+            btnStartNewGame.Hide();
+            btnLoadSavedGame.Hide();
             guna2CircleProgressBar1.BringToFront();
             guna2CircleProgressBar1.Show();
+
+            if(SavedGame == null)
             frmMainScreen = new frmMainScreen(this);
+            else
+                frmMainScreen = new frmMainScreen(this,SavedGame);
+
             tmStartGame.Start();
             frmMainScreen.ShowDialog();
             frmMainScreen.Enabled = false;
@@ -59,11 +63,11 @@ namespace Who_Will_Win_The_Million_Game
 
         private void tmStartGame_Tick(object sender, EventArgs e)
         {
-            guna2CircleProgressBar1.Value+=2;
+            guna2CircleProgressBar1.Value += 2;
             if (guna2CircleProgressBar1.Value == 100)
             {
                 frmMainScreen.Enabled = true;
-                
+
                 tmStartGame.Stop();
                 frmMainScreen.Opacity = 100.0;
                 this.Hide();
@@ -79,6 +83,32 @@ namespace Who_Will_Win_The_Million_Game
         {
             if(frmOriginalLifeCycle!=null)
             frmOriginalLifeCycle.Close();
+        }
+
+        clsGameProgress SavedGame;
+
+        public static bool LoadSavedGame(ref clsGameProgress SavedGame)
+        {
+            if (!File.Exists("CurrentGameProgress.bin"))
+            {
+                MessageBox.Show("There Is No Saved Progress", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            BinaryFormatter formatter = new BinaryFormatter();
+
+            using (FileStream stream = new FileStream("CurrentGameProgress.bin", FileMode.Open))
+            {
+                SavedGame = (clsGameProgress)formatter.Deserialize(stream);
+            }
+
+            return true;
+        }
+
+        private void btnLoadSavedGame_Click(object sender, EventArgs e)
+        {
+            if(LoadSavedGame(ref SavedGame))
+            btnStartNewGame.PerformClick();
         }
     }
 }

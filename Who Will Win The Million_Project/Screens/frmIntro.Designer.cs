@@ -30,31 +30,32 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIntro));
-            this.btnStart = new System.Windows.Forms.Button();
+            this.btnStartNewGame = new System.Windows.Forms.Button();
             this.tmStartGame = new System.Windows.Forms.Timer(this.components);
             this.guna2CircleProgressBar1 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnLoadSavedGame = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnStart
+            // btnStartNewGame
             // 
-            this.btnStart.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnStart.BackColor = System.Drawing.Color.Purple;
-            this.btnStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnStart.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Indigo;
-            this.btnStart.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStart.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold);
-            this.btnStart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.btnStart.Location = new System.Drawing.Point(394, 714);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(311, 79);
-            this.btnStart.TabIndex = 0;
-            this.btnStart.Text = "Start";
-            this.btnStart.UseVisualStyleBackColor = false;
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
-            this.btnStart.MouseHover += new System.EventHandler(this.btnStart_MouseHover);
+            this.btnStartNewGame.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnStartNewGame.BackColor = System.Drawing.Color.Purple;
+            this.btnStartNewGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnStartNewGame.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Indigo;
+            this.btnStartNewGame.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnStartNewGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStartNewGame.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold);
+            this.btnStartNewGame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.btnStartNewGame.Location = new System.Drawing.Point(394, 736);
+            this.btnStartNewGame.Name = "btnStartNewGame";
+            this.btnStartNewGame.Size = new System.Drawing.Size(311, 63);
+            this.btnStartNewGame.TabIndex = 0;
+            this.btnStartNewGame.Text = "Start New Game";
+            this.btnStartNewGame.UseVisualStyleBackColor = false;
+            this.btnStartNewGame.Click += new System.EventHandler(this.btnStart_Click);
+            this.btnStartNewGame.MouseHover += new System.EventHandler(this.btnStart_MouseHover);
             // 
             // tmStartGame
             // 
@@ -83,12 +84,31 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.btnStart);
+            this.panel1.Controls.Add(this.btnStartNewGame);
             this.panel1.Controls.Add(this.guna2CircleProgressBar1);
             this.panel1.Location = new System.Drawing.Point(1, 7);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1058, 850);
             this.panel1.TabIndex = 2;
+            // 
+            // btnLoadSavedGame
+            // 
+            this.btnLoadSavedGame.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnLoadSavedGame.BackColor = System.Drawing.Color.Purple;
+            this.btnLoadSavedGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLoadSavedGame.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Indigo;
+            this.btnLoadSavedGame.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnLoadSavedGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoadSavedGame.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold);
+            this.btnLoadSavedGame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.btnLoadSavedGame.Location = new System.Drawing.Point(362, 648);
+            this.btnLoadSavedGame.Name = "btnLoadSavedGame";
+            this.btnLoadSavedGame.Size = new System.Drawing.Size(375, 65);
+            this.btnLoadSavedGame.TabIndex = 1;
+            this.btnLoadSavedGame.Text = "Load Saved Game";
+            this.btnLoadSavedGame.UseVisualStyleBackColor = false;
+            this.btnLoadSavedGame.Click += new System.EventHandler(this.btnLoadSavedGame_Click);
+            this.btnLoadSavedGame.MouseHover += new System.EventHandler(this.btnStart_MouseHover);
             // 
             // frmIntro
             // 
@@ -98,6 +118,7 @@
             this.BackgroundImage = global::Who_Will_Win_The_Million_Game.Properties.Resources.Who_Win_The_Million;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1099, 864);
+            this.Controls.Add(this.btnLoadSavedGame);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Tahoma", 24F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -113,10 +134,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Button btnStartNewGame;
         private System.Windows.Forms.Timer tmStartGame;
         private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnLoadSavedGame;
     }
 }
 
