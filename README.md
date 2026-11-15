@@ -1,7 +1,9 @@
 # 🎮 Who Will Win The Million  
 ### C# WinForms Game – .NET Framework 4.7.2 | File-System Based Storage
 
-![.NET Framework](https://img.shields.io/badge/.NET%20Framework-4.7.2-512BD4?style=for-the-badge&logo=dotnet&logoColor=512BD4)[Language](https://img.shields.io/badge/C%23-9147FF?style=for-the-badge&logo=c-sharp)
+![.NET Framework](https://img.shields.io/badge/.NET_Framework-4.7.2-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-Programming-68217A?style=for-the-badge&logo=csharp&logoColor=white)
+[Language](https://img.shields.io/badge/C%23-9147FF?style=for-the-badge&logo=c-sharp)
 ![UI](https://img.shields.io/badge/WinForms-3A0CA3?style=for-the-badge&logo=windows)
 ![Storage](https://img.shields.io/badge/File%20System-4C1D95?style=for-the-badge&logo=files)
 ![Category](https://img.shields.io/badge/Desktop%20Game-5B21B6?style=for-the-badge&logo=windows95)
