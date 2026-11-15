@@ -36,11 +36,9 @@ namespace Who_Will_Win_The_Million_Game
 
         private void frmIntroLifeCycle_Load(object sender, EventArgs e)
         {
-
-            guna2CircleProgressBar1.Hide();
-            
-            
+            guna2CircleProgressBar1.Hide(); 
         }
+
         Form frmMainScreen;
         private void btnStart_Click(object sender, EventArgs e)
         {

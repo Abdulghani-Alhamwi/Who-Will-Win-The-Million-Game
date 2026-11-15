@@ -11,13 +11,19 @@ namespace Game
     {
         string _FileName = "FileQuestions.txt";
         public List<(string Question, string RightAnswer, List<string> WrongAnswers)> lQuestions;
+
+        public short CounterForShowingAnswers;
+
+        [NonSerialized]
+        public bool FoundCorrectAnswer = false;
+
+        public short CurrentQuestionNumber;
+
         public clsGame()
         {
             InitializeData();
         }
 
-       public short CounterForShowingAnswers;
-       internal bool FoundCorrectAnswer =false;
         private List<string> _GetWrongAnswers ( string[] QuestionWithAnswers)
         {
             List<string> WrongAnswers = new List<string>();
@@ -156,8 +162,7 @@ namespace Game
                     break;
             }
         }
-
-        public short CurrentQuestionNumber;
+        
         public void ShowQuestion(Label Q,short Level)
         {
             string Question ="";
