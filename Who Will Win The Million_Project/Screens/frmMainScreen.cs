@@ -422,6 +422,7 @@ namespace Who_Will_Win_The_Million_Game
         }
         void EndGame(string Title,string Balance)
         {
+            File.Delete("CurrentGameProgress.bin");
             Form frmBalance = new frmBalanceCard(Title,Balance);
             frmBalance.ShowDialog();
             Form FrmStart = new frmIntro(frm1);
@@ -635,7 +636,6 @@ namespace Who_Will_Win_The_Million_Game
 
             if (MessageBox.Show("Are you sure you want to exit?\n", "Alert", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
             {
-                File.Delete("CurrentGameProgress.bin");
                 EndGame("You Left The Game , Congrats on What You have Earned And Better Luck Next Time To Get The 1 Million Prize", lblCurrentBalanceMoney.Text);
             }
         }
