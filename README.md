@@ -35,6 +35,13 @@ The project demonstrates advanced **UI/UX design**, clean architectural patterns
 
 ---
 
+### 💾 **Game Progress Persistence – Binary Serialization**
+- Binary serialization to save the player's current game progress  
+- Binary deserialization to restore previously saved game progress  
+- Allows players to continue their game from where they left off  
+
+---
+
 ### 🔊 **Integrated Sound Engine**
 - Hover sound  
 - Click sound  
@@ -66,6 +73,7 @@ The project demonstrates advanced **UI/UX design**, clean architectural patterns
 - **Windows Forms (WinForms)**  
 - **.NET Framework 4.7.2**  
 - **System.IO** (File reading/writing)  
+- **Binary Serialization** (Saving and restoring game progress)  
 - **Embedded Resources** (audio + UI assets)
 
 ## 🚀 **How to Run**
