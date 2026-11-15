@@ -19,7 +19,7 @@ The project demonstrates advanced **UI/UX design**, clean architectural patterns
 
 ## ✨ Key Features
 
-### 🎨 **UX/UI Designed with 60/30/10 Color Principle**
+### 🎨 **UI/UX Designed with 60/30/10 Color Principle**
 - **60% dark theme**: main background for low-fatigue visibility  
 - **30% purple**: primary interactive elements  
 - **10% gold**: success indicators and visual highlights  
