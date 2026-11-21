@@ -486,8 +486,6 @@ namespace Who_Will_Win_The_Million_Game
             ChangeBtnColor(btnAnswer4, Color.Purple);
             if(CurrentGameProgress.Level !=15)
             ContinueGame();
-            
-            
         }
         private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -690,5 +688,51 @@ namespace Who_Will_Win_The_Million_Game
 
 
         }
+
+        private void frmMainScreen_MaximizedBoundsChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmMainScreen_SizeChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmMainScreen_ResizeBegin(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private const int WM_SYSCOMMAND = 0x0112;
+        private const int SC_MAXIMIZE = 0xF030;//SC means system command 
+        private const int SC_RESTORE = 0xF120;
+
+        protected override void WndProc(ref Message m)
+        {
+            if (m.Msg == WM_SYSCOMMAND)
+            {
+                int command = m.WParam.ToInt32() & 0xFFF0;
+                if (command == SC_MAXIMIZE || command == SC_RESTORE)
+                {
+                    OnBeforeMaximize();
+                }
+                
+            }
+
+            base.WndProc(ref m);
+        }
+
+        private void OnBeforeMaximize()
+        {
+            this.Opacity = 0;
+            
+            Timer timer = new Timer();
+            timer.Interval = 1;
+            timer.Tick += (e, s) => {this.Opacity = 100; timer.Stop(); };
+            timer.Start();
+        }
+   
     }
 }

@@ -533,7 +533,7 @@
             this.muteToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.muteToolStripMenuItem.Font = new System.Drawing.Font("Tahoma", 20F, System.Drawing.FontStyle.Bold);
             this.muteToolStripMenuItem.Name = "muteToolStripMenuItem";
-            this.muteToolStripMenuItem.Size = new System.Drawing.Size(158, 38);
+            this.muteToolStripMenuItem.Size = new System.Drawing.Size(180, 38);
             this.muteToolStripMenuItem.Text = "Mute";
             this.muteToolStripMenuItem.Click += new System.EventHandler(this.muteToolStripMenuItem_Click);
             // 
@@ -587,8 +587,11 @@
             this.Name = "frmMainScreen";
             this.Opacity = 0D;
             this.Text = "Who Win The Million";
+            this.MaximizedBoundsChanged += new System.EventHandler(this.frmMainScreen_MaximizedBoundsChanged);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmMainScreen_FormClosed);
             this.Load += new System.EventHandler(this.frmMainScreen_Load);
+            this.ResizeBegin += new System.EventHandler(this.frmMainScreen_ResizeBegin);
+            this.SizeChanged += new System.EventHandler(this.frmMainScreen_SizeChanged);
             this.groupBox1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

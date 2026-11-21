@@ -122,6 +122,7 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Tahoma", 24F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimizeBox = false;
             this.Name = "frmIntro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Who Will Win The Million";
